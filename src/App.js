@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { Button, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
+import "./App.css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid className="bg-linear">
+      <Navbar bg="transparent" expand="lg" className="header-nav">
+        <Container>
+          <Navbar.Brand href="#">Collers</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto menu-items">
+              <Nav.Link href="#">Products</Nav.Link>
+              <Nav.Link href="#">Solutions</Nav.Link>
+              <Nav.Link href="#">Pricing</Nav.Link>
+              <Nav.Link href="#">Resources</Nav.Link>
+              <Nav.Link href="#">Log In</Nav.Link>
+              <Nav.Link className="sign-up-btn">Sign up now</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </Container>
   );
 }
 
