@@ -38,92 +38,199 @@
 }
 
 .bg-linear {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  isolation: isolate;
-  position: relative;
-  width: 100%;
-  background: linear-gradient(180deg, #fffbeb 0%, #ffffff 89.63%);
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+isolation: isolate;
+position: relative;
+width: 1440px;
+height: 5545px;
+background: linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 89.63%);
+overflow-x: hidden;
 }
 
 .header-nav {
-  /* Header */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 80px;
-  gap: 202px;
-
-  width: 1440px;
-  height: 96px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  z-index: 1;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 24px 80px;
+gap: 452px;
+width: 1440px;
+height: 96px;
+flex: none;
+align-self: stretch;
+flex-grow: 0;
+z-index: 1;
 }
-.navbar-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 16px;
 
-  margin: 0 auto;
-  width: 631px;
-  height: 48px;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
 .nav-link {
-  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 8px;
+  font-style: normal;
+  font-weight: 500 !important;
   font-size: 16px;
-  line-height: 24px;
-
+  line-height: 24px ;
+  letter-spacing: 0.5px;
   color: #78350f !important;
-  padding: 12px 8px;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 8px;
 }
 
 .sign-up-btn {
-  box-sizing: border-box;
-
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   padding: 12px;
-
   width: 149px;
   height: 48px;
-
-  /* Amber/900 */
-  border: 2px solid #78350f;
-  border-radius: 8px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 5;
-  flex-grow: 0;
+  border: 2px solid #78350f !important;
+  border-radius: 8px !important;
+  color: #78350f !important;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
 }
 
+
 .navbar-brand {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  color: #78350f;
+margin: 0 auto;
+width: 102px;
+height: 35px;
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 700 !important;
+font-size: 32px !important;
+line-height: 110% !important;
+color: #78350F !important;
+flex: none;
+order: 0;
+flex-grow: 0;
 }
 .menu-items {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 16px;
+}
+
+#basic-navbar-nav {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 16px;
+margin: 0 auto;
+width: 631px;
+height: 48px;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.heroBody{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 80px;
+gap: 80px;
+width: 1440px;
+height: 583px;
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+z-index: 2;
+}
+
+.herocol1{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 48px;
+width: 714px;
+height: 257px;
+flex: none;
+order: 0;
+flex-grow: 1;
+
+}
+
+.secText{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 714px;
+height: 257px;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.ColSneakers{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+width: 714px;
+height: 79px;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.ColSneakersText{
+width: 714px;
+height: 79px;
+font-family: 'Roboto',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 52px;
+line-height: 110%;
+color: #0F172A;
+}
+
+.ColSneakersParag{
+width: 714px;
+height: 58px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 160%;
+color: #0F172A;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.heroButtonsGroup{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 347px;
+height: 56px;
+flex: none;
+order: 2;
+flex-grow: 0;
+
 }
